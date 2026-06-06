@@ -36,7 +36,13 @@ Results on MNIST (test accuracy, after 50 epochs):
 | Two hidden layers | `[784, 128, 64, 10]` | ReLU | **98.04%** |
 | Two hidden layers | `[784, 128, 64, 10]` | sigmoid (lr 0.5) | comparable to ReLU |
 
-The notebook also visualizes the linear model's learned weight matrix as ten 28×28 templates — digits with consistent shapes (0, 1) give clean templates, while more variable digits (5, 8, 9) are noisier. The committed notebook keeps its cell outputs, so the training logs and plots render directly on GitHub.
+![From-scratch net learning curves](figures/numpy_net_learning_curves.png)
+*The two-hidden-layer `[784, 128, 64, 10]` NumPy net over 50 epochs — train cost/accuracy vs test, reaching 98.04% test (train hits 100%; that train/test gap is the overfitting the hand-in-2 regularizers later close).*
+
+The notebook also visualizes the linear model's learned weight matrix as ten 28×28 templates — digits with consistent shapes (0, 1) give clean templates, while more variable digits (5, 8, 9) are noisier.
+
+![Linear weight templates](figures/linear_weight_templates.png)
+*The linear model's learned weight matrix rendered as ten 28×28 templates — the digit shapes emerge directly in the weights.* The committed notebook keeps its cell outputs, so the training logs and plots render directly on GitHub.
 
 ## Hand-in 2 — CNNs in PyTorch
 
