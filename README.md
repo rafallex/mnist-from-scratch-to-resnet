@@ -7,7 +7,7 @@ The point of each assignment was to implement and reason about one building bloc
 ## Structure
 
 ```
-deep-learning-1RT720/
+mnist-from-scratch-to-resnet/
 ├── ha1-mnist-numpy/
 │   ├── hand_in_1.ipynb   # NumPy-only fully-connected net (with run outputs and plots)
 │   ├── utils.py          # MNIST PNG loader + training-curve plotting helpers
